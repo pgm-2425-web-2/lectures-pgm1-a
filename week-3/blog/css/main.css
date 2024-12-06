@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.news-layout {
+	display: grid;
+	grid-template-areas:
+		"header"
+		"main"
+		"sidebar"
+		"footer";
+	gap: 1rem;
+}
+header {
+	grid-area: header;
+	padding: 1rem;
+	background-color: rgb(209, 204, 204);
+}
+main {
+	grid-area: main;
+	padding: 1rem;
+}
+aside {
+	grid-area: sidebar;
+	padding: 1rem;
+	background-color: rgb(209, 204, 204);
+}
+footer {
+	grid-area: footer;
+	padding: 1rem;
+	background-color: rgb(209, 204, 204);
+}
+
+@media (min-width: 40rem) {
+	.news-layout {
+		grid-template-columns: 2fr 1fr;
+		grid-template-areas:
+			"header header"
+			"main sidebar"
+			"footer footer";
+	}
+}
