@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #eee;
+}
+* {
+  box-sizing: border-box;
+}
+form {
+  max-width: 400px;
+  margin: auto;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+select:required:invalid,
+textarea:required:invalid {
+  border: 1px solid red;
+}
+
+select:required:valid,
+textarea:required:valid {
+  border: 1px solid green;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}

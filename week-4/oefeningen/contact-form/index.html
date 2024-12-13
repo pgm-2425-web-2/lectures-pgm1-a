@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="source">How did you hear about us?</label>
+        <select id="source" name="source">
+            <option value="search">Search Engine</option>
+            <option value="friend">Friend</option>
+            <option value="advertisement">Advertisement</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label>
+            <input type="checkbox" name="subscribe"> Subscribe to our newsletter
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

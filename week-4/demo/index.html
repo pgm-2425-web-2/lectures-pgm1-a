@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            display: flex;
+            gap: 1rem;
+            list-style-type: none;
+        }
+
+        li:not(:last-child)::after {
+            content: '-';
+            color: red;
+            margin: 0 0.5rem;
+        }
+
+        li:first-child {
+            background: green;
+        }
+
+        li:last-child {
+            background: orange;
+        }
+
+        .box p:first-of-type {
+            background: orange;
+        }
+
+        li:has(span) {
+            background: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li><span>2</span></li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+
+    <div class="box">
+        <h1>Titel</h1>
+        <p>Dit is text 1</p>
+        <p>Dit is text 2</p>
+    </div>
+</body>
+
+</html>
