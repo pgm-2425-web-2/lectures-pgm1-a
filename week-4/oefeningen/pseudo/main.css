@@ -1,24 +1,24 @@
 body {
-  padding: 1rem;
+	padding: 1rem;
 }
 
 .list {
-  list-style-type: none;
+	list-style-type: none;
 }
 
 .list li {
-  padding: 0.5rem;
-  &:before {
-    content: "+ ";
-  }
+	padding: 0.5rem;
+	&:before {
+		content: "+ ";
+	}
 
-  &:after {
-    display: inline-block;
-    content: "";
-    margin-left: 0.5rem;
-    width: 0.825rem;
-    height: 0.825rem;
-    border-radius: 50%;
-    background-color: cyan;
-  }
+	&::after {
+		display: inline-block;
+		content: "";
+		margin-left: 0.5rem;
+		width: 0.825rem;
+		height: 0.825rem;
+		border-radius: 50%;
+		background-color: cyan;
+	}
 }
