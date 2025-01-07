@@ -1,0 +1,18 @@
+.container {
+	max-width: 31.25rem;
+	background-image: url("../images/asset_background.jpg");
+	background-size: cover;
+	min-height: 43.75rem;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.mrbean {
+	width: 100%;
+	position: absolute;
+	bottom: -80%;
+	transition: 1s ease-in-out;
+}
+.container:hover .mrbean {
+	bottom: 0;
+}
